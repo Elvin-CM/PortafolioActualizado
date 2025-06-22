@@ -1,0 +1,111 @@
+header {
+    background-color: @color-principal;
+    padding: 5px;
+    box-shadow: 3;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        flex-direction: column;
+
+        img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+
+        p {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: @color-letras;
+            text-align: center;
+            margin: 0;
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+
+        ul {
+            display: flex;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                a {
+                    padding: 1px;
+                    color: @color-letras;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color:  #0097a7;
+                        color: white;
+                        border-radius: 5px;
+                        transition: background-color 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: #breaks[tablet]) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem 0.2rem;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin: 0.5rem;
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+
+            p {
+                font-size: 1.3rem;
+                font-weight: bold;
+                color: @color-letras;
+                margin-left: 10px;
+            }
+        }
+
+        nav {
+            display: flex;
+            margin: 0.5rem;
+            ul {
+                list-style: none;
+                display: flex;
+                gap: 0.5rem;
+
+                li {
+                    a {
+                        padding: 0.55rem;
+                        text-decoration: none;
+                        color: @color-letras;
+
+                        &:hover {
+                            background-color:  #0097a7;
+                            color: white;
+                            border-radius: 5px;
+                            transition: background-color 0.3s ease;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}
